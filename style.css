@@ -6,7 +6,19 @@
 body{
     font-family:pipboy, sans-serif ;
     color:#14fe17;
-    background: #20221f ;
+    background: #000 ;
+}
+
+body::after{
+    height: 100%;
+    width: 100%;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: repeating-linear-gradient(0deg, rgba(7, 71, 10, 0.5), rgba(3, 41, 5, 0.4) 1px, transparent 1px, transparent 2px);
+    z-index: 10000;
+    pointer-events: none;
 }
 
 .navbar{
@@ -14,30 +26,39 @@ body{
     margin: 0px 10px;
 }
 
-.navbar::before, .navbar::after{
-    height: 8px;
-    width: 2px;
-    content: "";
-    position: absolute;
-    display: block;
-    z-index: 5000;
-    background: #14fe17;
-    bottom: -8px;
-    left: 0px;
-}
+
 
 ul > li.navbar-item > a.nav-link{
     color: #14fe17 !important;
-    background: #20221f;
-    text-align : center
+    background: #000;
+    text-align : center;
+    width: 50%;
+    margin: auto;
+    font-size: 32px;
+    line-height: 32px;
+    padding-bottom: 0px;
+    z-index: 50;
+    position: relative;
+
 }
 .navbar-navbar-expand-md-navbar-light-bg-light{
-    background: #20221f
+    background: #000
 }
 ul>li.nav-item>a.nav-link{
     color: #14fe17;
 }
 
+ul > li.navbar-item.active::before{
+    content: "";
+    position: absolute;
+    background: #000;
+    width: 100%;
+    height: 22px;
+    top: 28px;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-top: 2px solid;
+}
 
 .navbar-light ul.navbar-nav > li{
     display: block;
