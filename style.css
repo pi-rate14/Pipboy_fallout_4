@@ -159,7 +159,7 @@ ul > li.navbar-item.active::before{
 
 .stat-numbers .col-1, .stat-numbers .col-2{
     background: rgba(16,255,0,0.15);
-    margin-right: 0px;
+    margin-right: 2px;
 }
 
 .stat-numbers .col-1.transparent,.stat-numbers .col-2.transparent{
@@ -167,7 +167,7 @@ ul > li.navbar-item.active::before{
 }
 
 .stat-numbers{
-   
+  margin-top:-45px;
 }
 
 .stat-numbers img{
@@ -192,4 +192,16 @@ ul > li.navbar-item.active::before{
 .stat-numbers .radiation{
     width: 17px;
     filter: invert(62%) sepia(78%) saturate(2327%) hue-rotate(76deg) brightness(113%) contrast(112%);
+}
+
+#status.tab-pane.full{
+    width: 100%;
+    max-width: 100%;
+}
+
+.item-list{
+    float: left;
+    padding: 0px;
+    list-style: none;
+    margin: 0px;
 }
