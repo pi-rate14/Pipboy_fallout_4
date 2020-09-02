@@ -141,7 +141,6 @@ ul > li.navbar-item.active::before{
 
 .stat-bar{
     width: 60px;
-    align: center;
     margin: auto;
 }
 
@@ -165,4 +164,32 @@ ul > li.navbar-item.active::before{
 
 .stat-numbers .col-1.transparent,.stat-numbers .col-2.transparent{
     background: transparent;
+}
+
+.stat-numbers{
+   
+}
+
+.stat-numbers img{
+    width: 100%;
+    filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(7)
+    brightness(3) contrast(2);
+}
+
+.stat-numbers img.sm-img{
+    width: 15px;
+    margin-left: 1px;
+    filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(7)
+    brightness(200) contrast(2);
+}
+
+.stat-numbers .helmet{
+    margin-top: 5px;
+    margin-left: 6px ;
+    filter: invert(62%) sepia(78%) saturate(2327%) hue-rotate(76deg) brightness(113%) contrast(112%);
+}
+
+.stat-numbers .radiation{
+    width: 17px;
+    filter: invert(62%) sepia(78%) saturate(2327%) hue-rotate(76deg) brightness(113%) contrast(112%);
 }
